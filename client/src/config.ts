@@ -1,5 +1,5 @@
 export default {
-    API_URL: process.env.REACT_APP_API_URL || 'http://localhost:4000/',
+    API_URL: process.env.REACT_APP_DEBUG ? "https://collabtime-backend.onrender.com" : 'http://localhost:4000/',
     FEATURES: ['Events']
 }
 
