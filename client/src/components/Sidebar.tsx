@@ -34,7 +34,7 @@ const Sidebar = ({ children }: Props) => {
         };
     });
 
-    // console.log(breadcrumbItems);
+    console.log(breadcrumbItems);
 
     return (
         <Layout>

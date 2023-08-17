@@ -44,7 +44,7 @@ function PasswordInput({
     );
 }
 
-export const Login = () => {
+export const Login = (props: { redirectFeature: String }) => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const toast = useToast();
@@ -89,7 +89,7 @@ export const Login = () => {
                                 "userId",
                                 user.user.id as string
                             );
-                            navigate("/");
+                            navigate("/events");
                         } catch (err) {
                             toast({
                                 status: "error",

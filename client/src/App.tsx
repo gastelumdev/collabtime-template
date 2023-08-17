@@ -13,7 +13,10 @@ function App() {
     return (
         <Box>
             <Routes>
-                <Route path="/login" element={<Login />} />
+                <Route
+                    path="/login"
+                    element={<Login redirectFeature={"events/"} />}
+                />
                 <Route path="*" element={<PrivateOutlet />}>
                     <Route index element={<Events />} />
                     <Route path="events" element={<Events />}></Route>

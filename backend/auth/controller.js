@@ -7,14 +7,6 @@ exports.signup = async (req, res) => {
     email: req.body.email
   }, "username email password isAuthenticated");
 
-    // const user = new User({
-    //   username: req.body.username,
-    //   email: req.body.email,
-    //   role: "admin",
-    //   isAuthenticated: true,
-    //   password: bcrypt.hashSync(req.body.password, 8)
-    // });
-
     try {
       if (user) {
         console.log(user)
@@ -35,18 +27,6 @@ exports.signup = async (req, res) => {
     } catch (err) {
       res.send(err)
     }
-
-    
-
-    // if (user.code === 11000) {
-      
-    //   res.send({message: "User already exists.", successful: false})
-    // } else {
-      
-    //   const request = await user.save();
-    //   console.log(user)
-    //   res.send({message: "User registered successfully.", successful: true});
-    // }
 };
 
 exports.signin = async (req, res) => {
