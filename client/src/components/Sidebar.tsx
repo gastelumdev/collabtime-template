@@ -101,9 +101,7 @@ const Sidebar = ({ children }: Props) => {
                         {children}
                     </div>
                 </Content>
-                <Footer style={{ textAlign: "center" }}>
-                    Collabtime ©2023
-                </Footer>
+                <Footer style={{ textAlign: "center" }}>Collabtime</Footer>
             </Layout>
         </Layout>
     );
